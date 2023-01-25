@@ -1,5 +1,13 @@
 log_format seafileformat '$http_x_forwarded_for $remote_addr [$time_local] "$request" $status $body_bytes_sent "$http_referer" "$http_user_agent" $upstream_response_time';
 
+
+server {
+    server_name cloud.cocogoat.moe;
+    listen 80;
+    rewrite ^ https://$http_host$request_uri? permanent;
+}
+
+
 server {
     server_name cloud.cocogoat.moe;
     listen 443 ssl http2;
