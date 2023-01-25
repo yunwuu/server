@@ -41,9 +41,9 @@ read domain
 
 ~/.acme.sh/acme.sh   --issue --dns dns_ali  -d "$domain" -d "*.$domain"
 
-echo "ssl_certificate /root/.acme.sh/$domain/fullchain.cer" >> "ssl-$domain.conf"
-echo "ssl_trusted_certificate /root/.acme.sh/$domain/fullchain.cer" >> "ssl-$domain.conf"
-echo "ssl_certificate_key /root/.acme.sh/$domain/$domain.key" >> "ssl-$domain.conf"
+echo "ssl_certificate /root/.acme.sh/$domain/fullchain.cer;" >> "ssl-$domain.conf"
+echo "ssl_trusted_certificate /root/.acme.sh/$domain/fullchain.cer;" >> "ssl-$domain.conf"
+echo "ssl_certificate_key /root/.acme.sh/$domain/$domain.key;" >> "ssl-$domain.conf"
 
 
 echo "SSL Config:"
