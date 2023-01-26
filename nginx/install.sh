@@ -19,8 +19,8 @@ cd /usr/src
 echo "Detecting Nginx $default_nginx_version" 
 
 wget "https://nginx.org/download/nginx-$default_nginx_version.tar.gz"
-tar -xzf nginx-1.23.3.tar.gz
-rm nginx-1.23.3.tar.gz
+tar -xzf "nginx-$default_nginx_version.tar.gz"
+rm "nginx-$default_nginx_version.tar.gz"
 
 echo "Detecting OPENSSL $default_openssl_version" 
 
