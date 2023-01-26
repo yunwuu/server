@@ -35,7 +35,7 @@ git submodule update --init --recursive
 
 
 cd "../nginx-$default_nginx_version"
-./configure --with-openssl=../openssl --with-http_ssl_module --with-http_v2_module --add-module=../ngx_brotli
+./configure --with-openssl=../openssl --with-http_ssl_module --with-http_v2_module --add-module=../ngx_brotli --with-http_sub_module 
 make
 
 echo -n "Do you want to install to /usr/local/nginx right now or do it later manually? (y/N)"
