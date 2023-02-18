@@ -27,6 +27,7 @@ echo "Detecting OPENSSL $default_openssl_version"
 wget "https://github.com/openssl/openssl/archive/refs/tags/openssl-$default_openssl_version.tar.gz"
 tar -xzf "openssl-$default_openssl_version.tar.gz"
 rm "openssl-$default_openssl_version.tar.gz"
+mv "openssl-openssl-$default_openssl_version" "openssl"
 
 
 git clone https://github.com/google/ngx_brotli.git
