@@ -1,4 +1,4 @@
-default_nginx_version=1.23.3
+default_nginx_version=1.25.3
 default_openssl_version=3.0.7
 
 
